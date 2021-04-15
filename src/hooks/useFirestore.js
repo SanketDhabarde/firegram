@@ -5,7 +5,7 @@ const useFirestore = (collection) => {
     const [docs, setDocs] = useState([]);
 
     const unsub = useEffect(() => {
-        projectFirestore.collection(collection).onSnapshot((snap) => {
+        projectFirestore.collection(collection).orderBy('createdAt', 'desc').onSnapshot((snap) => {
             let documents= [];
             snap.forEach( doc => {
                 documents.push({...doc.data(), id: doc.id});

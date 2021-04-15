@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Modal = ( { selectedImg , setSelectedImg}) => {
 
@@ -10,9 +11,12 @@ const Modal = ( { selectedImg , setSelectedImg}) => {
     }
 
     return (
-        <div className="backdrop" onClick={clickHandler}>
+        <motion.div className="backdrop" onClick={clickHandler}
+        initial={{opacity: 0}}
+        animate={{opacity: 1 }}
+        >
             <img src={selectedImg} alt="enlarge pic"/>
-        </div>
+        </motion.div>
     )
 }
 

@@ -85,7 +85,7 @@ label:hover{
 }
 .img-wrap{
   height: 18rem;
-  margin-bottom: 45px;
+  margin-bottom: 70px;
   opacity: 0.8;
 }
 .img__header{
@@ -98,9 +98,15 @@ label:hover{
   align-items: center;
   justify-content: space-between;
 }
-
+.img__delete{
+  cursor: pointer;
+}
 .img__avatar{
   margin-right: 7px;
+}
+.img__footer{
+  display: flex;
+  align-items: center;
 }
 
 .img-wrap img{

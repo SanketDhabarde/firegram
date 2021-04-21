@@ -5,6 +5,9 @@ import UploadForm from './comps/UploadForm';
 import { auth } from './firebase/config';
 import firebase from 'firebase';
 import { Button } from '@material-ui/core';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure();
 
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
@@ -29,7 +32,7 @@ function App() {
   const signIn = () => {
      auth.signInWithPopup(provider)
     .catch((error) => {
-      alert(error.message);
+      toast.error(error.message, {position: 'top-center'});
     });
   }
   return (

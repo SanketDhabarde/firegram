@@ -21,7 +21,7 @@ const useStorage= (file, user) => {
             const username = user.displayName;
             const userId = user.uid;
             const userPhoto = user.photoURL;
-            collectionRef.add({ url, createdAt, username, userId, userPhoto});
+            collectionRef.add({ url, createdAt, username, userId, userPhoto, likes: 0, likedBy: []});
             setUrl(url);
         })
     }, [file, user]);

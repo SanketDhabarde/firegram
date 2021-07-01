@@ -4,8 +4,9 @@
 
 ## Features:💻
 1. You can post images
-2. Delete your images
-3. Like others post
+2. View full image
+3. Delete your images
+4. Like others post
 
 ## Technology used:👨‍💻
 1. React Js

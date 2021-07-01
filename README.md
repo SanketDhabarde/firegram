@@ -12,5 +12,6 @@
 2. Firebase storage
 3. Firebase firestore
 4. Firebase auth
+5. Material-ui for icons
 
 [Live Link](https://firegram-62be6.web.app/)
